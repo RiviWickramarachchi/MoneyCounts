@@ -38,8 +38,8 @@ public class note_spawner : MonoBehaviour
         newMoneyNote.name = noteName;
         newMoneyNote.GetComponent<note>().noteVal = int.Parse(noteName);
         newMoneyNote.GetComponent<SpriteRenderer>().sprite = noteSprite;
-        newMoneyNote.transform.position = new Vector3(-1.25f, 2.21f, 0);
-        newMoneyNote.transform.localScale = new Vector3(0.5f, 1f, 1f);
+        newMoneyNote.transform.position = new Vector3(-2.9f, 19.1f, 0);
+        newMoneyNote.transform.localScale = new Vector3(7f, 7f, 1f);
         return newMoneyNote;
        
     }
