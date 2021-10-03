@@ -16,7 +16,7 @@ public class note_movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        this.dragNote();
     }
 
     public void dragNote()

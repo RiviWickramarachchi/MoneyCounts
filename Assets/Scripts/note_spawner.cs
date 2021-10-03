@@ -18,14 +18,21 @@ public class note_spawner : MonoBehaviour
           notesList.Add(note);
           
         }
+
+
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        notesList[0].GetComponent<note_movement>().dragNote();
-    } 
-    
+
+
+        //notesList[3].GetComponent<note_movement>().dragNote();
+        
+
+    }
+
     public GameObject spawnRandomNote()  
     {
         
@@ -39,7 +46,7 @@ public class note_spawner : MonoBehaviour
         newMoneyNote.GetComponent<note>().noteVal = int.Parse(noteName);
         newMoneyNote.GetComponent<SpriteRenderer>().sprite = noteSprite;
         newMoneyNote.transform.position = new Vector3(-2.9f, 19.1f, 0);
-        newMoneyNote.transform.localScale = new Vector3(7f, 7f, 1f);
+        newMoneyNote.transform.localScale = new Vector3(8f, 7f, 1f);
         return newMoneyNote;
        
     }
