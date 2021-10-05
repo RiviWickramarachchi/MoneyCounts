@@ -4,8 +4,17 @@ using UnityEngine;
 
 public class cash_counter_actions : MonoBehaviour
 {
-    public void OnTriggerEnter2D(Collider2D collision)
+
+    public int total = 0;
+
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        print("x");
+        if(collision.tag=="Note")
+        {
+            Debug.Log("Hit");
+            total = total + collision.GetComponent<note>().noteVal;
+            print(total);
+        }
+       
     }
 }

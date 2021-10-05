@@ -46,6 +46,7 @@ public class note_movement : MonoBehaviour
             if (touch.phase == TouchPhase.Ended)
             {
                 allow_to_be_moved = false;
+                
             }
         }
     }

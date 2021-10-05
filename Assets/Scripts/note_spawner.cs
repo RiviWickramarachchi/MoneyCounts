@@ -47,7 +47,11 @@ public class note_spawner : MonoBehaviour
         newMoneyNote.GetComponent<SpriteRenderer>().sprite = noteSprite;
         newMoneyNote.transform.position = new Vector3(-2.9f, 19.1f, 0);
         newMoneyNote.transform.localScale = new Vector3(8f, 7f, 1f);
+        newMoneyNote.tag = "Note";
         return newMoneyNote;
        
     }
+
+    
+
 }
