@@ -6,7 +6,8 @@ public class note_spawner : MonoBehaviour
 {
     public GameObject noteToSpawn;
     public Sprite[] noteSprites;
-    List<GameObject> notesList = new List<GameObject>();
+    //List<GameObject> notesList = new List<GameObject>();
+    private int noteCount = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +16,11 @@ public class note_spawner : MonoBehaviour
         for(int i=0;i <3; i++)
         {
           GameObject note =  spawnRandomNote();
-          notesList.Add(note);
+            //notesList.Add(note);
+            noteCount++;
           
         }
+        print(noteCount);
 
 
         
@@ -50,6 +53,11 @@ public class note_spawner : MonoBehaviour
         newMoneyNote.tag = "Note";
         return newMoneyNote;
        
+    }
+
+    public int getNoteCount()
+    {
+        return noteCount;
     }
 
     

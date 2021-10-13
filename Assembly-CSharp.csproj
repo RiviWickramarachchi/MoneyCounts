@@ -54,9 +54,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\note_spawner.cs" />
-    <Compile Include="Assets\Scripts\note.cs" />
-    <Compile Include="Assets\Scripts\note_movement.cs" />
     <Compile Include="Assets\Scripts\cash_counter_actions.cs" />
+    <Compile Include="Assets\Scripts\note.cs" />
+    <Compile Include="Assets\Scripts\timer_actions.cs" />
+    <Compile Include="Assets\Scripts\note_movement.cs" />
+    <Compile Include="Assets\Scripts\game_over_screen.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

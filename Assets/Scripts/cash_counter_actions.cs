@@ -6,6 +6,12 @@ public class cash_counter_actions : MonoBehaviour
 {
 
     public int total = 0;
+    GameObject objSpawner;  
+    
+    
+    
+
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -13,8 +19,13 @@ public class cash_counter_actions : MonoBehaviour
         {
             Debug.Log("Hit");
             total = total + collision.GetComponent<note>().noteVal;
+            objSpawner = GameObject.FindGameObjectWithTag("Player");
+            print(objSpawner.GetComponent<note_spawner>().getNoteCount());
             print(total);
+            
         }
        
     }
+    
+   
 }
